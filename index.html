@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Guru - Your Path to Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .active-nav-link {
+            border-bottom: 2px solid #6D28D9;
+            color: #6D28D9;
+        }
+
+        .nav-link {
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            border-bottom: 2px solid #8B5CF6;
+            color: #8B5CF6;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-purple-700 font-serif">Healing Guru</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link active-nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="login.html" class="text-purple-600 font-semibold hover:underline">Login</a>
+                <a href="signup.html"class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition duration-300">SignUp</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-purple-600">About</a>
+            <a href="services.html" class="block py-2 text-gray-700 hover:text-purple-600">Services</a>
+            <a href="contact.html" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            <hr>
+            <a href="login.html" class="block py-2">Login</a>
+            <a href="signup.html" class="block mt-2 bg-purple-600 text-white text-center px-6 py-2 rounded-full">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+            style="background-image: url('https://placehold.co/1920x1080/E9D5FF/3730A3?text=Welcome');">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="relative z-10 text-center text-white p-8">
+                <h1 class="text-5xl md:text-7xl font-bold font-serif mb-4">Find Your Inner Peace</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Guiding you on a transformative journey of
+                    self-discovery, healing, and spiritual growth.</p>
+                <a href="services.html"
+                    class="bg-white text-purple-700 px-8 py-3 rounded-full font-semibold hover:bg-purple-100 transition duration-300 text-lg">Explore
+                    Services</a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-purple-700 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold font-serif mb-12">What Our Clients Say</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                        <p class="mb-4 italic">"An absolutely life-changing experience. I feel more centered and at
+                            peace than ever before. The guidance was gentle yet powerful."</p>
+                        <p class="font-bold">- Sarah J.</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                        <p class="mb-4 italic">"I was skeptical at first, but the results speak for themselves. I've
+                            overcome creative blocks and feel a renewed sense of purpose."</p>
+                        <p class="font-bold">- Michael B.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Healing Guru. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+
+    <!-- Project Scripts -->
+    <script src="assets/js/firebase-init.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>
