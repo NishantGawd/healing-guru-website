@@ -1,0 +1,27 @@
+ /* Sets the default font for the entire website */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Sets the elegant serif font for headings and special text */
+    .font-serif {
+        font-family: 'Playfair Display', serif;
+    }
+
+    /* Style for the currently active navigation link */
+    .active-nav-link {
+        border-bottom: 2px solid #6D28D9; /* Deep Purple */
+        color: #6D28D9;
+    }
+
+    /* Base style for all navigation links */
+    .nav-link {
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    /* Style for navigation links on hover */
+    .nav-link:hover {
+        border-bottom: 2px solid #8B5CF6; /* Lighter Purple */
+        color: #8B5CF6;
+    }
