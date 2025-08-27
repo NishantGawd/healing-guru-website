@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Healing Guru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .active-nav-link { border-bottom: 2px solid #6D28D9; color: #6D28D9; }
+        .nav-link { border-bottom: 2px solid transparent; transition: all 0.3s ease; }
+        .nav-link:hover { border-bottom: 2px solid #8B5CF6; color: #8B5CF6; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-purple-700 font-serif">Healing Guru</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active-nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="login.html" class="text-purple-600 font-semibold hover:underline">Login</a>
+                <a href="signup.html" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition duration-300">Sign Up</a>
+            </div>            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-purple-600">About</a>
+            <a href="services.html" class="block py-2 text-gray-700 hover:text-purple-600">Services</a>
+            <a href="contact.html" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            <hr>
+            <a href="login.html" class="block py-2">Login</a>
+            <a href="signup.html" class="block mt-2 bg-purple-600 text-white text-center px-6 py-2 rounded-full">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Services Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl font-bold font-serif mb-2 text-purple-800">Our Healing Services</h1>
+                <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-lg">We offer a range of services designed to restore balance to your mind, body, and spirit.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
+                        <div class="text-purple-600 mb-4"><svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <h3 class="text-2xl font-bold font-serif mb-3">Reiki Healing</h3>
+                        <p class="text-gray-600 mb-4">A gentle, non-invasive energy healing technique that promotes relaxation, reduces stress, and supports the body's natural healing processes.</p>
+                        <a href="#" class="mt-auto bg-purple-100 text-purple-700 px-6 py-2 rounded-full hover:bg-purple-200 transition duration-300">Book a Session</a>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
+                        <div class="text-purple-600 mb-4"><svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <h3 class="text-2xl font-bold font-serif mb-3">Spiritual Coaching</h3>
+                        <p class="text-gray-600 mb-4">Personalized guidance to help you navigate life's challenges, discover your purpose, and deepen your spiritual connection.</p>
+                        <a href="#" class="mt-auto bg-purple-100 text-purple-700 px-6 py-2 rounded-full hover:bg-purple-200 transition duration-300">Book a Session</a>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
+                        <div class="text-purple-600 mb-4"><svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+                        <h3 class="text-2xl font-bold font-serif mb-3">Chakra Balancing</h3>
+                        <p class="text-gray-600 mb-4">A holistic therapy that uses various techniques to align and balance your body's energy centers, promoting overall well-being.</p>
+                        <a href="#" class="mt-auto bg-purple-100 text-purple-700 px-6 py-2 rounded-full hover:bg-purple-200 transition duration-300">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Healing Guru. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+
+    <!-- Project Scripts -->
+    <script src="assets/js/firebase-init.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
